@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mwst-Rechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Mehrwertsteuer-Rechner</h1>
+        <section>
+            <article>
+                <div>
+                    <h3>Was soll berechnet werden ?</h3>
+                    <input type="radio" name="Netto-Brutto" id="nettoZuBrutto" name=><label value="n_b">Mehrwertsteuer
+                        aufschlagen (Netto zu Brutto)</label>
+                    <input type="radio" name="Netto-Brutto" id="bruttoZuNetto" name=><label value="b_n">Mehrwertsteuer
+                        abziehen (Brutto zu Netto</label>
+                </div>
+                <div>
+                    <h3>Mehrwertsteuersatz</h3>
+                    <input type="radio" name="mwst" id="19" value="19"><label>19%</label>
+                    <input type="radio" name="mwst" id="7" value="7"><label>7%</label>
+                </div>
+                <div>
+                    <h3 id="inputHeadline">Nettobetrag (Preis ohne Mehrwertsteuer) in Euro</h3>
+                    <input placeholder="0,00€" type="text" name="Input-Feld" id="input">
+                </div>
+                <div>
+                    <button onclick=calcMwst() type="button" value="">BERECHNEN</button>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <h2>Ergebnis</h2>
+                </div>
+                <div>
+                    <h2>Mehrwertsteuerbetrag</h2>
+                    <h2 id="output1">0€</h2>
+                </div>
+                <div>
+                    <h2 id="outputHeadline">Bruttobetrag (Endpreis)</h2>
+                    <h2 id="output2">0€</h2>
+                </div>
+            </article>
+        </section>
+    </main>
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
